@@ -37,3 +37,21 @@ yuapi:
   client:
     access-key: chouchou
     secret-key: shangyingzhi
+
+dubbo:
+  application:
+    qos-enable: false
+    pos-accept-foreign-ip: false
+    name: dubbo-springboot-provider
+  protocol:
+    name: dubbo
+    port: -1
+  # 配置注册中心
+  registry:
+    id: nacos-registry
+    address: nacos://localhost:8848
+  # 设置协议-协议由提供方指定消费方被动接受
+    protocol:
+      name: duboo
+      port: 20882
+
